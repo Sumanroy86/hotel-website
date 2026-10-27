@@ -27,7 +27,7 @@ export default function GalleryPage({ onOpenLightbox }) {
           <div className="page-breadcrumb">
             <Link to="/">Home</Link>
             <span>/</span>
-            <span style={{ color: '#ffffff' }}>Gallery</span>
+            <span style={{ color: 'var(--text-on-dark)' }}>Gallery</span>
           </div>
 
           <div className="hero-brand-badge" style={{ marginBottom: '1rem' }}>
@@ -39,7 +39,7 @@ export default function GalleryPage({ onOpenLightbox }) {
             Authentic Photo <span>Gallery</span>
           </h1>
 
-          <p style={{ color: 'var(--text-secondary)', fontSize: '1.1rem', maxWidth: '720px', margin: '0 auto 1.5rem auto', lineHeight: '1.7' }}>
+          <p style={{ color: 'var(--text-on-dark-secondary)', fontSize: '1.1rem', maxWidth: '720px', margin: '0 auto 1.5rem auto', lineHeight: '1.7' }}>
             Explore high-resolution, unedited interior photographs showcasing our rooms,
             suites, guest house spaces, and property facilities at {BUSINESS_INFO.name}.
           </p>

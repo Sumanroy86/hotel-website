@@ -91,7 +91,7 @@ export default function SlideshowHero() {
                   <Star key={i} size={12} fill="currentColor" />
                 ))}
               </div>
-              <span style={{ fontWeight: 600, color: 'var(--text-primary)' }}>4.9/5 Rating</span>
+              <span style={{ fontWeight: 600, color: 'var(--text-on-dark)' }}>4.9/5 Rating</span>
             </div>
 
             <div className="hero-trust-pill">

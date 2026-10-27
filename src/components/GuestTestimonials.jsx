@@ -78,13 +78,13 @@ export default function GuestTestimonials() {
               </div>
 
               {/* Reviewer Details */}
-              <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', borderTop: '1px solid rgba(102, 80, 58, 0.3)', paddingTop: '1.2rem' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', borderTop: '1px solid var(--gold-border-subtle)', paddingTop: '1.2rem' }}>
                 <div
                   style={{
                     width: '44px',
                     height: '44px',
                     borderRadius: '50%',
-                    background: 'linear-gradient(135deg, #1B1718 0%, #242021 100%)',
+                    background: 'linear-gradient(135deg, #38251F 0%, #241712 100%)',
                     border: '1px solid var(--gold-primary)',
                     display: 'flex',
                     alignItems: 'center',
@@ -92,7 +92,7 @@ export default function GuestTestimonials() {
                     fontFamily: 'var(--font-serif-display)',
                     fontSize: '0.92rem',
                     fontWeight: 700,
-                    color: 'var(--gold-secondary)',
+                    color: 'var(--gold-primary)',
                     flexShrink: 0
                   }}
                 >

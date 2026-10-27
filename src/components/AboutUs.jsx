@@ -27,7 +27,7 @@ export default function AboutUs() {
                 style={{
                   position: 'absolute',
                   inset: 0,
-                  background: 'linear-gradient(180deg, transparent 40%, rgba(9, 15, 11, 0.95) 100%)'
+                  background: 'linear-gradient(180deg, transparent 40%, rgba(36, 23, 18, 0.95) 100%)'
                 }}
               />
               <div
@@ -37,7 +37,7 @@ export default function AboutUs() {
                   left: '24px',
                   right: '24px',
                   padding: '1.2rem',
-                  background: 'rgba(14, 23, 17, 0.88)',
+                  background: 'rgba(56, 37, 31, 0.88)',
                   backdropFilter: 'blur(12px)',
                   border: '1px solid var(--gold-border-subtle)',
                   borderRadius: 'var(--radius-sm)'
@@ -46,7 +46,7 @@ export default function AboutUs() {
                 <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem', color: 'var(--gold-primary)', fontSize: '0.78rem', textTransform: 'uppercase', letterSpacing: '0.12em', fontFamily: 'var(--font-serif-display)' }}>
                   <Waves size={15} /> Sea Beach Gateway
                 </div>
-                <div style={{ color: '#fff', fontSize: '1rem', fontWeight: 600, marginTop: '0.2rem' }}>
+                <div style={{ color: 'var(--text-on-dark)', fontSize: '1rem', fontWeight: 600, marginTop: '0.2rem' }}>
                   Walk to New Digha Sea Shore in Under 5 Minutes
                 </div>
               </div>

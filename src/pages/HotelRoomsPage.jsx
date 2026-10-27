@@ -15,7 +15,7 @@ export default function HotelRoomsPage() {
           <div className="page-breadcrumb">
             <Link to="/">Home</Link>
             <span>/</span>
-            <span style={{ color: '#ffffff' }}>Hotel Rooms</span>
+            <span style={{ color: 'var(--text-on-dark)' }}>Hotel Rooms</span>
           </div>
 
           <div className="hero-brand-badge" style={{ marginBottom: '1rem' }}>
@@ -27,7 +27,7 @@ export default function HotelRoomsPage() {
             Executive <span>Hotel Rooms & Suites</span>
           </h1>
 
-          <p style={{ color: 'var(--text-secondary)', fontSize: '1.1rem', maxWidth: '720px', margin: '0 auto 1.5rem auto', lineHeight: '1.7' }}>
+          <p style={{ color: 'var(--text-on-dark-secondary)', fontSize: '1.1rem', maxWidth: '720px', margin: '0 auto 1.5rem auto', lineHeight: '1.7' }}>
             Designed for superior comfort, privacy, and indulgence. Each hotel suite at {BUSINESS_INFO.name}
             features handcrafted hardwood elements, plush mattresses, sound isolation, and modern en-suite marble baths.
           </p>

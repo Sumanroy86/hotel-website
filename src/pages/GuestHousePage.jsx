@@ -15,7 +15,7 @@ export default function GuestHousePage() {
           <div className="page-breadcrumb">
             <Link to="/">Home</Link>
             <span>/</span>
-            <span style={{ color: '#ffffff' }}>Guest House</span>
+            <span style={{ color: 'var(--text-on-dark)' }}>Guest House</span>
           </div>
 
           <div className="hero-brand-badge" style={{ marginBottom: '1rem' }}>
@@ -27,7 +27,7 @@ export default function GuestHousePage() {
             Comfortable & Affordable <span>Guest House Stays</span>
           </h1>
 
-          <p style={{ color: 'var(--text-secondary)', fontSize: '1.1rem', maxWidth: '720px', margin: '0 auto 1.5rem auto', lineHeight: '1.7' }}>
+          <p style={{ color: 'var(--text-on-dark-secondary)', fontSize: '1.1rem', maxWidth: '720px', margin: '0 auto 1.5rem auto', lineHeight: '1.7' }}>
             Experience warm residential serenity, immaculate hygiene, and economical pricing.
             Our guest house rooms are perfect for extended visits, group holidays, and family getaways.
           </p>

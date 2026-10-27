@@ -21,7 +21,7 @@ export default function Footer() {
               <span className="brand-name">{BUSINESS_INFO.name}</span>
             </Link>
 
-            <p style={{ color: 'var(--text-secondary)', fontSize: '0.88rem', lineHeight: '1.75', marginBottom: '1.5rem', maxWidth: '340px' }}>
+            <p style={{ color: 'var(--text-on-dark-secondary)', fontSize: '0.88rem', lineHeight: '1.75', marginBottom: '1.5rem', maxWidth: '340px' }}>
               {BUSINESS_INFO.tagline}. Offering boutique hotel suites and peaceful guest house accommodations 
               crafted with timeless elegance, natural warmth, and attentive hospitality.
             </p>
@@ -68,16 +68,16 @@ export default function Footer() {
             <div className="footer-col-title">Important Notice</div>
             <div
               style={{
-                background: 'rgba(198, 161, 107, 0.08)',
-                border: '1px solid var(--gold-border)',
+                background: 'rgba(198, 161, 91, 0.12)',
+                border: '1px solid var(--gold-border-subtle)',
                 borderRadius: 'var(--radius-sm)',
                 padding: '1.1rem',
                 fontSize: '0.78rem',
-                color: 'var(--text-secondary)',
+                color: 'var(--text-on-dark-muted)',
                 lineHeight: '1.65'
               }}
             >
-              <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', color: 'var(--gold-secondary)', marginBottom: '0.4rem', fontWeight: 600 }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', color: 'var(--gold-primary)', marginBottom: '0.4rem', fontWeight: 600 }}>
                 <ShieldCheck size={14} /> Demonstration Template
               </div>
               All prices, contact details, and facilities are editable sample placeholders. 

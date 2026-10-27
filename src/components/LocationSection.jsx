@@ -26,10 +26,10 @@ export default function LocationSection() {
               <div className="map-radar-pin">
                 <MapPin size={30} />
               </div>
-              <h3 style={{ fontFamily: 'var(--font-serif-heading)', color: '#fff', fontSize: '1.4rem', marginBottom: '0.4rem' }}>
+              <h3 style={{ fontFamily: 'var(--font-serif-heading)', color: 'var(--text-on-dark)', fontSize: '1.4rem', marginBottom: '0.4rem' }}>
                 Coastal Stay Location
               </h3>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', maxWidth: '420px', marginBottom: '1.2rem' }}>
+              <p style={{ color: 'var(--text-on-dark-secondary)', fontSize: '0.9rem', maxWidth: '420px', marginBottom: '1.2rem' }}>
                 {BUSINESS_INFO.locationFull}
               </p>
 
@@ -59,7 +59,7 @@ export default function LocationSection() {
             {/* Bottom Address Strip */}
             <div
               style={{
-                background: '#0a120c',
+                background: 'var(--bg-dark-surface)',
                 borderTop: '1px solid var(--gold-border-subtle)',
                 padding: '1.2rem 1.6rem',
                 display: 'flex',
@@ -73,7 +73,7 @@ export default function LocationSection() {
                 <div style={{ fontSize: '0.74rem', color: 'var(--gold-primary)', textTransform: 'uppercase', letterSpacing: '0.12em', fontFamily: 'var(--font-serif-display)' }}>
                   Registered Region
                 </div>
-                <div style={{ color: '#fff', fontSize: '0.92rem', fontWeight: 600 }}>
+                <div style={{ color: 'var(--text-on-dark)', fontSize: '0.92rem', fontWeight: 600 }}>
                   Purba Medinipur, West Bengal - Pin: 721428
                 </div>
               </div>
@@ -119,15 +119,15 @@ export default function LocationSection() {
               style={{
                 marginTop: '1.5rem',
                 padding: '1.2rem',
-                background: 'var(--bg-dark-card)',
+                background: 'var(--bg-card)',
                 border: '1px solid var(--gold-border-subtle)',
                 borderRadius: 'var(--radius-sm)',
                 fontSize: '0.84rem',
-                color: 'var(--text-muted)',
+                color: 'var(--text-secondary)',
                 lineHeight: '1.6'
               }}
             >
-              <strong style={{ color: 'var(--gold-light)' }}>Travel Tip:</strong> Regular express trains
+              <strong style={{ color: 'var(--gold-primary)' }}>Travel Tip:</strong> Regular express trains
               (Tamralipta Express, Kandari Express) connect Howrah / Shalimar directly to Digha Railway Station.
               Totos (e-rickshaws) and auto-rickshaws are readily available outside the station to reach Coastal Stay in 5-7 minutes.
             </div>

@@ -71,10 +71,10 @@ export default function PhotoGallery({ onOpenLightbox }) {
               <div className="gallery-item-overlay">
                 <span className="gallery-item-tag">{item.categoryLabel}</span>
                 <h4 className="gallery-item-title">{item.title}</h4>
-                <p style={{ fontSize: '0.8rem', color: '#c8c5b9', marginTop: '0.2rem' }}>
+                <p style={{ fontSize: '0.8rem', color: 'rgba(250, 247, 242, 0.88)', marginTop: '0.2rem' }}>
                   {item.caption}
                 </p>
-                <div style={{ position: 'absolute', top: '16px', right: '16px', color: 'var(--gold-light)' }}>
+                <div style={{ position: 'absolute', top: '16px', right: '16px', color: 'var(--gold-primary)' }}>
                   <Maximize2 size={18} />
                 </div>
               </div>

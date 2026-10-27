@@ -72,7 +72,7 @@ export default function InteractiveAccommodationsShowcase() {
           <div className="tab-pane-fade">
             <div
               style={{
-                background: 'rgba(36, 32, 33, 0.6)',
+                background: 'var(--bg-card)',
                 border: '1px solid var(--gold-border)',
                 borderRadius: 'var(--radius-md)',
                 padding: '1.2rem 1.8rem',
@@ -111,7 +111,7 @@ export default function InteractiveAccommodationsShowcase() {
           <div className="tab-pane-fade">
             <div
               style={{
-                background: 'rgba(36, 32, 33, 0.6)',
+                background: 'var(--bg-card)',
                 border: '1px solid var(--gold-border)',
                 borderRadius: 'var(--radius-md)',
                 padding: '1.2rem 1.8rem',
@@ -173,32 +173,32 @@ export default function InteractiveAccommodationsShowcase() {
                     </tr>
                   </thead>
                   <tbody>
-                    <tr style={{ borderBottom: '1px solid rgba(102, 80, 58, 0.25)' }}>
+                    <tr style={{ borderBottom: '1px solid var(--gold-border-subtle)' }}>
                       <td style={{ padding: '1rem 1.5rem', color: 'var(--text-muted)', fontSize: '0.88rem' }}>Target Ambience</td>
                       <td style={{ padding: '1rem 1.5rem', color: 'var(--text-primary)', fontWeight: 600 }}>Ultra-Luxury, Executive, Soundproof</td>
                       <td style={{ padding: '1rem 1.5rem', color: 'var(--text-primary)', fontWeight: 600 }}>Peaceful, Homely, Family-Friendly</td>
                     </tr>
-                    <tr style={{ borderBottom: '1px solid rgba(102, 80, 58, 0.25)', background: 'rgba(27, 23, 24, 0.3)' }}>
+                    <tr style={{ borderBottom: '1px solid var(--gold-border-subtle)', background: 'rgba(198, 161, 91, 0.08)' }}>
                       <td style={{ padding: '1rem 1.5rem', color: 'var(--text-muted)', fontSize: '0.88rem' }}>Sample Tariff Range</td>
                       <td style={{ padding: '1rem 1.5rem', color: 'var(--gold-secondary)', fontWeight: 700 }}>₹2,800 – ₹4,800 / night</td>
                       <td style={{ padding: '1rem 1.5rem', color: 'var(--gold-secondary)', fontWeight: 700 }}>₹1,200 – ₹3,200 / night</td>
                     </tr>
-                    <tr style={{ borderBottom: '1px solid rgba(102, 80, 58, 0.25)' }}>
+                    <tr style={{ borderBottom: '1px solid var(--gold-border-subtle)' }}>
                       <td style={{ padding: '1rem 1.5rem', color: 'var(--text-muted)', fontSize: '0.88rem' }}>Bedding Types</td>
                       <td style={{ padding: '1rem 1.5rem', color: 'var(--text-secondary)' }}>Grand King & Queen Beds, 4-Star Linens</td>
                       <td style={{ padding: '1rem 1.5rem', color: 'var(--text-secondary)' }}>Comfort Double & Multi-Bed Arrangements</td>
                     </tr>
-                    <tr style={{ borderBottom: '1px solid rgba(102, 80, 58, 0.25)', background: 'rgba(27, 23, 24, 0.3)' }}>
+                    <tr style={{ borderBottom: '1px solid var(--gold-border-subtle)', background: 'rgba(198, 161, 91, 0.08)' }}>
                       <td style={{ padding: '1rem 1.5rem', color: 'var(--text-muted)', fontSize: '0.88rem' }}>Air Conditioning</td>
                       <td style={{ padding: '1rem 1.5rem', color: 'var(--text-secondary)' }}>Silent Split Climate Control in all suites</td>
                       <td style={{ padding: '1rem 1.5rem', color: 'var(--text-secondary)' }}>Available in AC Rooms & Family Haven</td>
                     </tr>
-                    <tr style={{ borderBottom: '1px solid rgba(102, 80, 58, 0.25)' }}>
+                    <tr style={{ borderBottom: '1px solid var(--gold-border-subtle)' }}>
                       <td style={{ padding: '1rem 1.5rem', color: 'var(--text-muted)', fontSize: '0.88rem' }}>Bathroom Fixtures</td>
                       <td style={{ padding: '1rem 1.5rem', color: 'var(--text-secondary)' }}>Marble En-Suite with Rain Shower & Geyser</td>
                       <td style={{ padding: '1rem 1.5rem', color: 'var(--text-secondary)' }}>Attached Private Bath with Hot Water Geyser</td>
                     </tr>
-                    <tr style={{ borderBottom: '1px solid rgba(102, 80, 58, 0.25)', background: 'rgba(27, 23, 24, 0.3)' }}>
+                    <tr style={{ borderBottom: '1px solid var(--gold-border-subtle)', background: 'rgba(198, 161, 91, 0.08)' }}>
                       <td style={{ padding: '1rem 1.5rem', color: 'var(--text-muted)', fontSize: '0.88rem' }}>Room Service</td>
                       <td style={{ padding: '1rem 1.5rem', color: 'var(--text-secondary)' }}>Dedicated in-room dining assistance</td>
                       <td style={{ padding: '1rem 1.5rem', color: 'var(--text-secondary)' }}>Dining Hall Access & On-Demand Order</td>

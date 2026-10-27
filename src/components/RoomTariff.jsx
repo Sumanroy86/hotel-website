@@ -56,7 +56,7 @@ export default function RoomTariff() {
                   </td>
                   <td>{item.occupancy}</td>
                   <td className="tariff-price-cell">{item.weekdaySample}</td>
-                  <td className="tariff-price-cell" style={{ color: '#fff' }}>
+                  <td className="tariff-price-cell" style={{ color: 'var(--text-primary)' }}>
                     {item.weekendSample}
                   </td>
                   <td>{item.extraPerson}</td>

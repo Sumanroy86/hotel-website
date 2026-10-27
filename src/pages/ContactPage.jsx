@@ -14,7 +14,7 @@ export default function ContactPage() {
           <div className="page-breadcrumb">
             <Link to="/">Home</Link>
             <span>/</span>
-            <span style={{ color: '#ffffff' }}>Contact</span>
+            <span style={{ color: 'var(--text-on-dark)' }}>Contact</span>
           </div>
 
           <div className="hero-brand-badge" style={{ marginBottom: '1rem' }}>
@@ -26,7 +26,7 @@ export default function ContactPage() {
             Contact <span>{BUSINESS_INFO.name}</span>
           </h1>
 
-          <p style={{ color: 'var(--text-secondary)', fontSize: '1.08rem', maxWidth: '680px', margin: '0 auto 1.8rem auto', lineHeight: '1.7' }}>
+          <p style={{ color: 'var(--text-on-dark-secondary)', fontSize: '1.08rem', maxWidth: '680px', margin: '0 auto 1.8rem auto', lineHeight: '1.7' }}>
             We look forward to welcoming you. Call our front desk directly for live room availability,
             seasonal tariffs, and personalized booking arrangements.
           </p>

@@ -135,7 +135,7 @@ export default function ContactSection() {
           {/* Right Column: WhatsApp Trip Enquiry Form */}
           <div className="contact-form-box">
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '1.2rem' }}>
-              <h3 style={{ fontFamily: 'var(--font-serif-heading)', fontSize: '1.45rem', color: '#fff' }}>
+              <h3 style={{ fontFamily: 'var(--font-serif-heading)', fontSize: '1.45rem', color: 'var(--text-primary)' }}>
                 Quick WhatsApp Enquiry Form
               </h3>
               <span className="badge-green" style={{ fontSize: '0.72rem' }}>

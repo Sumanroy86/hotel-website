@@ -1,53 +1,55 @@
 /* ==========================================================================
    ROYAL STAY - ULTRA-LUXURY HOSPITALITY DESIGN SYSTEM
-   Dark Royal Color Palette:
-   - Primary Background: Deep Charcoal Black — #111015
-   - Secondary Background: Dark Midnight Brown — #1B1718
-   - Card Background: Dark Espresso Brown — #242021
-   - Elevated Card: #2D282A / #363032
-   - Primary Accent: Champagne Gold — #C6A16B
-   - Secondary Accent: Warm Antique Gold — #D8B77E
-   - Main Text & Headings: Soft Ivory White — #F5F0E8
-   - Secondary Text: Warm Light Grey — #B8B0AA
-   - Borders & Dividers: Subtle Muted Gold — #66503A
-   - Button Background: Champagne Gold — #C6A16B
-   - Button Text: Deep Charcoal Black — #111015
-   - Hover Glow: Rich Golden Glow — #E5C58E
+   Updated Color Palette:
+   - Chocolate Brown: #38251F
+   - Champagne Gold: #C6A15B
+   - Warm White: #FAF7F2
+   - Light Beige: #E9DFD2
+   - Dark Brown: #241712
    ========================================================================== */
 
 :root {
-  /* Core Royal Palette Tokens */
-  --bg-primary: #111015;
-  --bg-secondary: #1B1718;
-  --bg-card: #242021;
-  --bg-card-hover: #2D282A;
-  --bg-card-elevated: #363032;
-  --bg-glass: rgba(27, 23, 24, 0.88);
+  /* Core Palette Tokens */
+  --bg-primary: #FAF7F2;          /* Main page backgrounds: Warm White (#FAF7F2) */
+  --bg-secondary: #E9DFD2;        /* Cards & secondary backgrounds: Light Beige (#E9DFD2) */
+  --bg-card: #E9DFD2;             /* Cards: Light Beige (#E9DFD2) */
+  --bg-card-hover: #DFD3C3;       /* Card hover */
+  --bg-card-elevated: #E4D7C7;    /* Elevated card */
+  --bg-glass: rgba(233, 223, 210, 0.92);
+
+  /* Navbar, Footer & Dark Surfaces */
+  --bg-navbar: #38251F;           /* Navbar: Chocolate Brown (#38251F) */
+  --bg-footer: #38251F;           /* Footer: Chocolate Brown (#38251F) */
+  --bg-dark-surface: #38251F;     /* Chocolate Brown (#38251F) */
+  --bg-dark-card: #241712;        /* Dark Brown (#241712) */
 
   /* Gold & Champagne Accents */
-  --gold-primary: #C6A16B;
-  --gold-secondary: #D8B77E;
-  --gold-glow: #E5C58E;
-  --gold-border: #66503A;
-  --gold-border-subtle: rgba(198, 161, 107, 0.22);
-  --gold-border-glow: rgba(229, 197, 142, 0.45);
+  --gold-primary: #C6A15B;        /* Champagne Gold (#C6A15B) */
+  --gold-secondary: #B58F48;      /* Warm Champagne Gold for high contrast */
+  --gold-glow: #D9B875;           /* Hover glow / lighter gold */
+  --gold-light: #D9B875;          /* Light Champagne Gold */
+  --gold-border: #C6A15B;         /* Borders: Champagne Gold (#C6A15B) */
+  --gold-border-subtle: rgba(198, 161, 91, 0.35);
+  --gold-border-glow: rgba(198, 161, 91, 0.55);
 
   /* Typography */
-  --text-primary: #F5F0E8;
-  --text-secondary: #B8B0AA;
-  --text-muted: #8E8680;
-  --text-gold: #D8B77E;
+  --text-primary: #241712;        /* Headings and text on light backgrounds: Dark Brown (#241712) */
+  --text-secondary: #4A3B34;      /* Secondary text on light backgrounds */
+  --text-muted: #6E5D55;          /* Muted text on light backgrounds */
+  --text-gold: #9E7B35;           /* Gold accent text */
+
+  /* Text on Dark Backgrounds */
+  --text-on-dark: #FAF7F2;        /* Text on dark backgrounds: Warm White (#FAF7F2) */
+  --text-on-dark-secondary: rgba(250, 247, 242, 0.88);
+  --text-on-dark-muted: rgba(250, 247, 242, 0.72);
 
   /* Button Tokens */
-  --btn-bg: #C6A16B;
-  --btn-text: #111015;
-  --btn-hover: #E5C58E;
+  --btn-bg: #C6A15B;              /* Primary buttons: Champagne Gold background */
+  --btn-text: #241712;            /* Primary buttons: Dark Brown text */
+  --btn-hover: #D9B875;           /* Hover: Champagne Gold */
 
   /* Backward Compatibility Aliases */
   --bg-dark-base: var(--bg-primary);
-  --bg-dark-surface: var(--bg-secondary);
-  --bg-dark-card: var(--bg-card);
-  --bg-dark-card-hover: var(--bg-card-hover);
   --bg-dark-glass: var(--bg-glass);
   --bg-dark-elevated: var(--bg-card-elevated);
 
@@ -65,12 +67,12 @@
   --radius-xl: 28px;
   --radius-full: 9999px;
 
-  /* Shadows */
-  --shadow-sm: 0 4px 14px rgba(0, 0, 0, 0.4);
-  --shadow-md: 0 12px 32px rgba(0, 0, 0, 0.55);
-  --shadow-lg: 0 24px 50px rgba(0, 0, 0, 0.7);
-  --shadow-gold: 0 8px 30px rgba(198, 161, 107, 0.22);
-  --shadow-gold-hover: 0 12px 38px rgba(229, 197, 142, 0.35);
+  /* Shadows tuned for Warm White & Light Beige */
+  --shadow-sm: 0 4px 14px rgba(36, 23, 18, 0.08);
+  --shadow-md: 0 10px 28px rgba(36, 23, 18, 0.12);
+  --shadow-lg: 0 20px 45px rgba(36, 23, 18, 0.16);
+  --shadow-gold: 0 8px 25px rgba(198, 161, 91, 0.28);
+  --shadow-gold-hover: 0 12px 35px rgba(198, 161, 91, 0.42);
 
   /* Transitions */
   --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
@@ -105,15 +107,15 @@ body {
   position: relative;
 }
 
-/* Subtle Royal Vignette Background */
+/* Subtle Warm Vignette Background */
 body::before {
   content: '';
   position: fixed;
   inset: 0;
   background:
-    radial-gradient(circle at 20% 15%, rgba(198, 161, 107, 0.05) 0%, transparent 50%),
-    radial-gradient(circle at 80% 85%, rgba(102, 80, 58, 0.08) 0%, transparent 60%),
-    radial-gradient(circle at 50% 50%, rgba(27, 23, 24, 0.8) 0%, transparent 100%);
+    radial-gradient(circle at 20% 15%, rgba(198, 161, 91, 0.04) 0%, transparent 50%),
+    radial-gradient(circle at 80% 85%, rgba(233, 223, 210, 0.45) 0%, transparent 60%),
+    radial-gradient(circle at 50% 50%, rgba(250, 247, 242, 0.6) 0%, transparent 100%);
   pointer-events: none;
   z-index: -1;
 }
@@ -237,10 +239,10 @@ button {
 }
 
 .btn-primary-gold {
-  background: linear-gradient(135deg, var(--gold-primary) 0%, var(--gold-secondary) 100%);
+  background: linear-gradient(135deg, var(--gold-primary) 0%, var(--gold-glow) 100%);
   color: var(--btn-text);
   box-shadow: var(--shadow-gold);
-  border: 1px solid var(--gold-secondary);
+  border: 1px solid var(--gold-primary);
 }
 
 .btn-primary-gold:hover {
@@ -251,26 +253,26 @@ button {
 }
 
 .btn-outline-gold {
-  background: rgba(27, 23, 24, 0.4);
+  background: rgba(198, 161, 91, 0.08);
   color: var(--text-primary);
   border: 1px solid var(--gold-border);
   backdrop-filter: blur(8px);
 }
 
 .btn-outline-gold:hover {
-  background: rgba(198, 161, 107, 0.14);
+  background: var(--gold-primary);
   border-color: var(--gold-primary);
-  color: #ffffff;
+  color: var(--btn-text);
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+  box-shadow: var(--shadow-sm);
 }
 
 .btn-phone-call,
 .btn-phone {
-  background: linear-gradient(135deg, var(--gold-primary) 0%, var(--gold-secondary) 100%);
+  background: linear-gradient(135deg, var(--gold-primary) 0%, var(--gold-glow) 100%);
   color: var(--btn-text);
   font-weight: 700;
-  border: 1px solid var(--gold-glow);
+  border: 1px solid var(--gold-primary);
   box-shadow: var(--shadow-gold);
 }
 
@@ -279,6 +281,7 @@ button {
   background: linear-gradient(135deg, var(--gold-glow) 0%, var(--gold-primary) 100%);
   box-shadow: var(--shadow-gold-hover);
   transform: translateY(-2px);
+  color: var(--btn-text);
 }
 
 .btn-gold {
@@ -289,6 +292,7 @@ button {
 
 .btn-gold:hover {
   background: var(--gold-glow);
+  color: var(--btn-text);
 }
 
 .btn-lg {
@@ -300,9 +304,9 @@ button {
    TOP DISCLAIMER STRIP
    ========================================================================== */
 .disclaimer-strip {
-  background: #151112;
-  border-bottom: 1px solid var(--gold-border);
-  color: var(--text-secondary);
+  background: var(--bg-navbar);
+  border-bottom: 1px solid var(--gold-border-subtle);
+  color: var(--text-on-dark);
   font-size: 0.78rem;
   padding: 0.55rem 1rem;
   text-align: center;
@@ -321,16 +325,16 @@ button {
 }
 
 .navbar {
-  background: rgba(17, 16, 21, 0.92);
+  background: var(--bg-navbar);
   backdrop-filter: blur(14px);
   border-bottom: 1px solid var(--gold-border);
   transition: all var(--transition-smooth);
 }
 
 .navbar-scrolled {
-  background: rgba(17, 16, 21, 0.98);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
-  border-bottom-color: rgba(198, 161, 107, 0.35);
+  background: rgba(56, 37, 31, 0.98);
+  box-shadow: 0 10px 30px rgba(36, 23, 18, 0.4);
+  border-bottom-color: var(--gold-primary);
 }
 
 .nav-container {
@@ -349,7 +353,7 @@ button {
 .brand-icon-box {
   width: 44px;
   height: 44px;
-  background: linear-gradient(135deg, #1B1718 0%, #242021 100%);
+  background: linear-gradient(135deg, #38251F 0%, #241712 100%);
   border: 1px solid var(--gold-primary);
   border-radius: var(--radius-sm);
   display: flex;
@@ -359,12 +363,12 @@ button {
   font-weight: 700;
   font-size: 1.05rem;
   color: var(--gold-primary);
-  box-shadow: 0 0 18px rgba(198, 161, 107, 0.25);
+  box-shadow: 0 0 18px rgba(198, 161, 91, 0.3);
   transition: all var(--transition-smooth);
 }
 
 .brand-logo:hover .brand-icon-box {
-  box-shadow: 0 0 25px rgba(229, 197, 142, 0.4);
+  box-shadow: 0 0 25px rgba(198, 161, 91, 0.45);
   transform: rotate(4deg);
 }
 
@@ -373,7 +377,7 @@ button {
   font-size: 1.45rem;
   font-weight: 700;
   letter-spacing: 0.16em;
-  color: var(--text-primary);
+  color: var(--text-on-dark);
   text-transform: uppercase;
 }
 
@@ -388,7 +392,7 @@ button {
   font-size: 0.88rem;
   font-weight: 500;
   letter-spacing: 0.04em;
-  color: var(--text-secondary);
+  color: rgba(250, 247, 242, 0.88);
   transition: color var(--transition-fast);
   position: relative;
   padding: 0.4rem 0;
@@ -407,7 +411,7 @@ button {
 
 .nav-link:hover,
 .nav-link.active {
-  color: var(--text-primary);
+  color: var(--gold-primary);
 }
 
 .nav-link.active::after,
@@ -426,10 +430,10 @@ button {
   align-items: center;
   gap: 0.5rem;
   padding: 0.6rem 1.15rem;
-  background: rgba(198, 161, 107, 0.12);
+  background: rgba(198, 161, 91, 0.16);
   border: 1px solid var(--gold-border);
   border-radius: var(--radius-sm);
-  color: var(--gold-secondary);
+  color: var(--gold-primary);
   font-size: 0.84rem;
   font-weight: 600;
   transition: all var(--transition-fast);
@@ -437,14 +441,14 @@ button {
 
 .nav-phone-link:hover {
   background: var(--gold-primary);
-  color: #111015;
+  color: var(--btn-text);
   border-color: var(--gold-glow);
   box-shadow: var(--shadow-gold);
 }
 
 .mobile-toggle-btn {
   display: none;
-  color: var(--text-primary);
+  color: var(--text-on-dark);
   padding: 0.5rem;
 }
 
@@ -452,7 +456,7 @@ button {
 .mobile-backdrop {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(36, 23, 18, 0.7);
   backdrop-filter: blur(4px);
   z-index: 1001;
   opacity: 0;
@@ -471,7 +475,7 @@ button {
   right: -320px;
   width: 300px;
   height: 100vh;
-  background: var(--bg-secondary);
+  background: var(--bg-navbar);
   border-left: 1px solid var(--gold-border);
   z-index: 1002;
   padding: 2rem 1.5rem;
@@ -502,9 +506,9 @@ button {
 .mobile-drawer-link {
   display: block;
   font-size: 1.05rem;
-  color: var(--text-secondary);
+  color: var(--text-on-dark);
   padding: 0.5rem 0;
-  border-bottom: 1px solid rgba(102, 80, 58, 0.3);
+  border-bottom: 1px solid rgba(198, 161, 91, 0.25);
 }
 
 .mobile-drawer-link.active,
@@ -546,8 +550,8 @@ button {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(to bottom, rgba(17, 16, 21, 0.55) 0%, rgba(17, 16, 21, 0.75) 50%, rgba(17, 16, 21, 0.98) 100%),
-    radial-gradient(circle at center, transparent 30%, rgba(17, 16, 21, 0.8) 100%);
+    linear-gradient(to bottom, rgba(56, 37, 31, 0.6) 0%, rgba(36, 23, 18, 0.8) 50%, rgba(36, 23, 18, 0.95) 100%),
+    radial-gradient(circle at center, transparent 30%, rgba(36, 23, 18, 0.85) 100%);
   z-index: 2;
 }
 
@@ -568,31 +572,31 @@ button {
   align-items: center;
   gap: 0.6rem;
   padding: 0.45rem 1.25rem;
-  background: rgba(36, 32, 33, 0.85);
+  background: rgba(56, 37, 31, 0.85);
   border: 1px solid var(--gold-border);
   border-radius: var(--radius-full);
-  color: var(--gold-secondary);
+  color: var(--gold-primary);
   font-size: 0.82rem;
   letter-spacing: 0.16em;
   text-transform: uppercase;
   margin-bottom: 1.6rem;
   backdrop-filter: blur(8px);
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 16px rgba(36, 23, 18, 0.4);
 }
 
 .hero-main-title {
   font-family: var(--font-serif-display);
   font-size: clamp(2.6rem, 5.8vw, 4.8rem);
   font-weight: 700;
-  color: var(--text-primary);
+  color: var(--text-on-dark);
   line-height: 1.15;
   letter-spacing: 0.04em;
   margin-bottom: 1.2rem;
-  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+  text-shadow: 0 4px 20px rgba(36, 23, 18, 0.9);
 }
 
 .hero-main-title span {
-  background: linear-gradient(135deg, #F5F0E8 0%, var(--gold-glow) 50%, var(--gold-primary) 100%);
+  background: linear-gradient(135deg, #FAF7F2 0%, var(--gold-glow) 50%, var(--gold-primary) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
@@ -601,7 +605,7 @@ button {
 
 .hero-subtitle {
   font-size: clamp(1.05rem, 1.8vw, 1.3rem);
-  color: var(--text-secondary);
+  color: rgba(250, 247, 242, 0.92);
   max-width: 680px;
   margin: 0 auto 1.4rem auto;
   line-height: 1.7;
@@ -610,7 +614,7 @@ button {
 
 .hero-disclaimer-note {
   font-size: 0.9rem;
-  color: var(--text-muted);
+  color: rgba(250, 247, 242, 0.75);
   max-width: 600px;
   margin: 0 auto 2.2rem auto;
 }
@@ -622,6 +626,17 @@ button {
   gap: 1.1rem;
   flex-wrap: wrap;
   margin-bottom: 2.8rem;
+}
+
+.hero-action-buttons .btn-outline-gold {
+  background: rgba(56, 37, 31, 0.55);
+  color: var(--text-on-dark);
+  border-color: var(--gold-primary);
+}
+
+.hero-action-buttons .btn-outline-gold:hover {
+  background: var(--gold-primary);
+  color: var(--btn-text);
 }
 
 .hero-trust-bar {
@@ -637,11 +652,11 @@ button {
   align-items: center;
   gap: 0.5rem;
   padding: 0.4rem 1rem;
-  background: rgba(27, 23, 24, 0.6);
+  background: rgba(56, 37, 31, 0.75);
   border: 1px solid var(--gold-border);
   border-radius: var(--radius-full);
   font-size: 0.82rem;
-  color: var(--text-secondary);
+  color: var(--text-on-dark);
 }
 
 .hero-controls-bar {
@@ -660,9 +675,9 @@ button {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background: rgba(27, 23, 24, 0.7);
+  background: rgba(56, 37, 31, 0.8);
   border: 1px solid var(--gold-border);
-  color: var(--text-primary);
+  color: var(--text-on-dark);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -671,7 +686,7 @@ button {
 
 .hero-nav-arrow:hover {
   background: var(--gold-primary);
-  color: #111015;
+  color: var(--btn-text);
   border-color: var(--gold-glow);
 }
 
@@ -684,7 +699,7 @@ button {
 .hero-dot {
   width: 28px;
   height: 4px;
-  background: rgba(184, 176, 170, 0.35);
+  background: rgba(250, 247, 242, 0.4);
   border-radius: var(--radius-full);
   transition: all var(--transition-smooth);
 }
@@ -698,10 +713,10 @@ button {
    QUICK RESERVATION FLOATING QUERY DOCK (BEST-IN-CLASS)
    ========================================================================== */
 .quick-booking-dock {
-  background: linear-gradient(135deg, rgba(36, 32, 33, 0.95) 0%, rgba(27, 23, 24, 0.95) 100%);
+  background: var(--bg-card);
   border: 1px solid var(--gold-border);
   border-radius: var(--radius-md);
-  box-shadow: 0 16px 45px rgba(0, 0, 0, 0.7), 0 0 24px rgba(198, 161, 107, 0.12);
+  box-shadow: 0 16px 45px rgba(36, 23, 18, 0.12), 0 0 24px rgba(198, 161, 91, 0.18);
   padding: 1.4rem 1.8rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -720,7 +735,7 @@ button {
   display: flex;
   flex-direction: column;
   gap: 0.35rem;
-  border-right: 1px solid rgba(102, 80, 58, 0.35);
+  border-right: 1px solid rgba(198, 161, 91, 0.4);
   padding-right: 1.2rem;
 }
 
@@ -752,8 +767,8 @@ button {
 }
 
 .quick-dock-select option {
-  background: #1B1718;
-  color: #F5F0E8;
+  background: #FAF7F2;
+  color: #241712;
 }
 
 /* ==========================================================================
@@ -840,7 +855,7 @@ button {
   display: block;
   font-family: var(--font-serif-display);
   font-size: 0.95rem;
-  color: var(--gold-glow);
+  color: var(--gold-secondary);
 }
 
 .welcome-badge-float span {
@@ -895,7 +910,7 @@ button {
   position: absolute;
   top: 1.2rem;
   left: 1.2rem;
-  background: rgba(17, 16, 21, 0.85);
+  background: rgba(56, 37, 31, 0.88);
   border: 1px solid var(--gold-primary);
   border-radius: var(--radius-full);
   padding: 0.4rem 0.95rem;
@@ -904,7 +919,7 @@ button {
   gap: 0.5rem;
   font-size: 0.78rem;
   font-weight: 600;
-  color: var(--gold-secondary);
+  color: var(--gold-primary);
   backdrop-filter: blur(8px);
 }
 
@@ -961,7 +976,7 @@ button {
 }
 
 .split-card-footer {
-  border-top: 1px solid var(--gold-border);
+  border-top: 1px solid rgba(198, 161, 91, 0.35);
   padding-top: 1.4rem;
   display: flex;
   align-items: center;
@@ -1041,7 +1056,7 @@ button {
 .badge-sample {
   font-size: 0.7rem;
   color: var(--text-muted);
-  border: 1px solid rgba(142, 134, 128, 0.3);
+  border: 1px solid rgba(110, 93, 85, 0.35);
   padding: 0.15rem 0.5rem;
   border-radius: var(--radius-full);
 }
@@ -1081,7 +1096,7 @@ button {
   top: 1rem;
   right: 1rem;
   background: var(--gold-primary);
-  color: #111015;
+  color: #241712;
   font-size: 0.74rem;
   font-weight: 700;
   padding: 0.3rem 0.75rem;
@@ -1101,7 +1116,7 @@ button {
   align-items: center;
   justify-content: space-between;
   padding: 0.75rem 0;
-  border-bottom: 1px solid rgba(102, 80, 58, 0.3);
+  border-bottom: 1px solid rgba(198, 161, 91, 0.35);
   margin-bottom: 1rem;
 }
 
@@ -1122,12 +1137,12 @@ button {
 }
 
 .room-highlight-tag {
-  background: rgba(45, 40, 42, 0.7);
-  border: 1px solid rgba(102, 80, 58, 0.3);
+  background: rgba(198, 161, 91, 0.15);
+  border: 1px solid rgba(198, 161, 91, 0.35);
   border-radius: var(--radius-xs);
   padding: 0.25rem 0.6rem;
   font-size: 0.74rem;
-  color: var(--text-secondary);
+  color: var(--text-primary);
 }
 
 .room-card-footer {
@@ -1191,7 +1206,7 @@ button {
   width: 52px;
   height: 52px;
   border-radius: var(--radius-sm);
-  background: rgba(198, 161, 107, 0.12);
+  background: rgba(198, 161, 91, 0.15);
   border: 1px solid var(--gold-border);
   display: flex;
   align-items: center;
@@ -1253,7 +1268,7 @@ button {
 .gallery-item-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(17, 16, 21, 0.95) 0%, rgba(17, 16, 21, 0.3) 55%, transparent 100%);
+  background: linear-gradient(to top, rgba(36, 23, 18, 0.95) 0%, rgba(36, 23, 18, 0.35) 55%, transparent 100%);
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -1274,13 +1289,13 @@ button {
 .gallery-item-title {
   font-family: var(--font-serif-heading);
   font-size: 1.15rem;
-  color: var(--text-primary);
+  color: var(--text-on-dark);
   margin-bottom: 0.2rem;
 }
 
 .gallery-item-sub {
   font-size: 0.78rem;
-  color: var(--text-secondary);
+  color: rgba(250, 247, 242, 0.85);
 }
 
 .gallery-filter-tabs {
@@ -1306,7 +1321,7 @@ button {
 .gallery-tab-btn.active,
 .gallery-tab-btn:hover {
   background: var(--gold-primary);
-  color: #111015;
+  color: #241712;
   border-color: var(--gold-glow);
   box-shadow: var(--shadow-gold);
 }
@@ -1315,14 +1330,14 @@ button {
    DIRECT TELEPHONE RESERVATION HUB (BOTTOM CTA)
    ========================================================================== */
 .phone-hub-card {
-  background: linear-gradient(135deg, #1B1718 0%, #242021 50%, #1B1718 100%);
+  background: linear-gradient(135deg, #38251F 0%, #241712 100%);
   border: 1px solid var(--gold-border);
   border-radius: var(--radius-lg);
   padding: 4rem 2.5rem;
   text-align: center;
   max-width: 920px;
   margin: 0 auto;
-  box-shadow: var(--shadow-lg), 0 0 40px rgba(198, 161, 107, 0.12);
+  box-shadow: var(--shadow-lg), 0 0 40px rgba(198, 161, 91, 0.18);
   position: relative;
   overflow: hidden;
 }
@@ -1332,10 +1347,10 @@ button {
   align-items: center;
   gap: 0.5rem;
   padding: 0.4rem 1rem;
-  background: rgba(17, 16, 21, 0.7);
+  background: rgba(36, 23, 18, 0.75);
   border: 1px solid var(--gold-border);
   border-radius: var(--radius-full);
-  color: var(--gold-secondary);
+  color: var(--gold-primary);
   font-size: 0.8rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -1345,7 +1360,7 @@ button {
 .phone-hub-title {
   font-family: var(--font-serif-heading);
   font-size: clamp(2rem, 3.6vw, 2.8rem);
-  color: var(--text-primary);
+  color: var(--text-on-dark);
   margin-bottom: 1.2rem;
 }
 
@@ -1355,7 +1370,7 @@ button {
 }
 
 .phone-hub-desc {
-  color: var(--text-secondary);
+  color: rgba(250, 247, 242, 0.9);
   font-size: 1.05rem;
   max-width: 640px;
   margin: 0 auto 2.4rem auto;
@@ -1392,7 +1407,7 @@ button {
 .page-hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to bottom, rgba(17, 16, 21, 0.7) 0%, rgba(17, 16, 21, 0.95) 100%);
+  background: linear-gradient(to bottom, rgba(56, 37, 31, 0.78) 0%, rgba(36, 23, 18, 0.94) 100%);
 }
 
 .page-hero-content {
@@ -1407,14 +1422,14 @@ button {
   justify-content: center;
   gap: 0.6rem;
   font-size: 0.82rem;
-  color: var(--gold-secondary);
+  color: var(--gold-primary);
   margin-bottom: 1.2rem;
 }
 
 .page-hero-heading {
   font-family: var(--font-serif-display);
   font-size: clamp(2.4rem, 4.5vw, 3.8rem);
-  color: var(--text-primary);
+  color: var(--text-on-dark);
   line-height: 1.2;
   margin-bottom: 1.2rem;
 }
@@ -1428,7 +1443,7 @@ button {
    ========================================================================== */
 .room-breadcrumb-strip {
   background: var(--bg-secondary);
-  border-bottom: 1px solid var(--gold-border);
+  border-bottom: 1px solid var(--gold-border-subtle);
   padding: 1rem 0;
 }
 
@@ -1490,7 +1505,7 @@ button {
   position: absolute;
   top: 1rem;
   left: 1rem;
-  background: rgba(17, 16, 21, 0.85);
+  background: rgba(56, 37, 31, 0.88);
   border: 1px solid var(--gold-primary);
   border-radius: var(--radius-full);
   padding: 0.4rem 0.9rem;
@@ -1498,7 +1513,7 @@ button {
   align-items: center;
   gap: 0.45rem;
   font-size: 0.78rem;
-  color: var(--gold-secondary);
+  color: var(--gold-primary);
 }
 
 .room-thumb-row {
@@ -1521,7 +1536,7 @@ button {
 .room-thumb-btn:hover {
   opacity: 1;
   border-color: var(--gold-primary);
-  box-shadow: 0 0 12px rgba(198, 161, 107, 0.3);
+  box-shadow: 0 0 12px rgba(198, 161, 91, 0.35);
 }
 
 .room-thumb-btn img {
@@ -1561,7 +1576,7 @@ button {
 .sample-badge {
   font-size: 0.74rem;
   color: var(--text-muted);
-  border: 1px solid rgba(102, 80, 58, 0.5);
+  border: 1px solid var(--gold-border-subtle);
   padding: 0.25rem 0.6rem;
   border-radius: var(--radius-full);
 }
@@ -1571,8 +1586,8 @@ button {
   grid-template-columns: repeat(3, 1fr);
   gap: 1.2rem;
   padding: 1.2rem 0;
-  border-top: 1px solid rgba(102, 80, 58, 0.3);
-  border-bottom: 1px solid rgba(102, 80, 58, 0.3);
+  border-top: 1px solid var(--gold-border-subtle);
+  border-bottom: 1px solid var(--gold-border-subtle);
   margin-bottom: 1.8rem;
 }
 
@@ -1646,7 +1661,7 @@ button {
 .sidebar-price-block {
   text-align: center;
   padding-bottom: 1.5rem;
-  border-bottom: 1px solid rgba(102, 80, 58, 0.35);
+  border-bottom: 1px solid var(--gold-border-subtle);
   margin-bottom: 1.5rem;
 }
 
@@ -1703,8 +1718,8 @@ button {
 }
 
 .sidebar-policy-box {
-  background: rgba(27, 23, 24, 0.8);
-  border: 1px solid var(--gold-border);
+  background: rgba(198, 161, 91, 0.12);
+  border: 1px solid var(--gold-border-subtle);
   border-radius: var(--radius-sm);
   padding: 0.9rem;
   margin-bottom: 1.5rem;
@@ -1756,7 +1771,7 @@ button {
   width: 64px;
   height: 64px;
   border-radius: 50%;
-  background: rgba(198, 161, 107, 0.12);
+  background: rgba(198, 161, 91, 0.15);
   border: 1px solid var(--gold-border);
   display: flex;
   align-items: center;
@@ -1780,12 +1795,13 @@ button {
 }
 
 .phone-number-showcase {
-  background: rgba(27, 23, 24, 0.8);
+  background: linear-gradient(135deg, #38251F 0%, #241712 100%);
   border: 1px solid var(--gold-primary);
   border-radius: var(--radius-sm);
-  padding: 1rem 1.8rem;
+  padding: 1.2rem 1.8rem;
   margin-bottom: 1.5rem;
   width: 100%;
+  box-shadow: var(--shadow-md);
 }
 
 .phone-tag {
@@ -1800,7 +1816,7 @@ button {
   font-family: var(--font-serif-display);
   font-size: 1.6rem;
   font-weight: 700;
-  color: var(--text-primary);
+  color: var(--text-on-dark);
   letter-spacing: 0.08em;
 }
 
@@ -1837,7 +1853,7 @@ button {
   width: 44px;
   height: 44px;
   border-radius: var(--radius-sm);
-  background: rgba(198, 161, 107, 0.1);
+  background: rgba(198, 161, 91, 0.15);
   border: 1px solid var(--gold-border);
   display: flex;
   align-items: center;
@@ -1866,8 +1882,8 @@ button {
 }
 
 .contact-disclaimer-box {
-  background: rgba(27, 23, 24, 0.7);
-  border: 1px solid var(--gold-border);
+  background: rgba(198, 161, 91, 0.12);
+  border: 1px solid var(--gold-border-subtle);
   border-radius: var(--radius-sm);
   padding: 1.1rem;
   font-size: 0.82rem;
@@ -1879,7 +1895,7 @@ button {
    FOOTER
    ========================================================================== */
 .footer {
-  background: #0E0D11;
+  background: var(--bg-footer);
   border-top: 1px solid var(--gold-border);
   padding: 5rem 0 2.5rem 0;
   position: relative;
@@ -1911,23 +1927,23 @@ button {
 
 .footer-link {
   font-size: 0.88rem;
-  color: var(--text-secondary);
+  color: var(--text-on-dark-secondary);
   transition: color var(--transition-fast);
 }
 
 .footer-link:hover {
-  color: var(--gold-glow);
+  color: var(--gold-primary);
   padding-left: 0.3rem;
 }
 
 .footer-bottom {
-  border-top: 1px solid rgba(102, 80, 58, 0.35);
+  border-top: 1px solid var(--gold-border-subtle);
   padding-top: 2rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
   font-size: 0.82rem;
-  color: var(--text-muted);
+  color: var(--text-on-dark-muted);
 }
 
 /* ==========================================================================
@@ -1936,7 +1952,7 @@ button {
 .lightbox-backdrop {
   position: fixed;
   inset: 0;
-  background: rgba(17, 16, 21, 0.95);
+  background: rgba(36, 23, 18, 0.92);
   backdrop-filter: blur(12px);
   z-index: 2000;
   display: flex;
@@ -1954,7 +1970,7 @@ button {
   border: 1px solid var(--gold-primary);
   border-radius: var(--radius-md);
   overflow: hidden;
-  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.85);
+  box-shadow: 0 25px 60px rgba(36, 23, 18, 0.5);
 }
 
 .lightbox-img {
@@ -1980,9 +1996,9 @@ button {
   width: 42px;
   height: 42px;
   border-radius: 50%;
-  background: rgba(17, 16, 21, 0.8);
+  background: rgba(56, 37, 31, 0.9);
   border: 1px solid var(--gold-primary);
-  color: #fff;
+  color: var(--text-on-dark);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1992,7 +2008,7 @@ button {
 
 .lightbox-close-btn:hover {
   background: var(--gold-primary);
-  color: #111015;
+  color: var(--btn-text);
 }
 
 @keyframes fadeIn {
@@ -2056,7 +2072,7 @@ button {
 
   .quick-dock-col {
     border-right: none;
-    border-bottom: 1px solid rgba(102, 80, 58, 0.35);
+    border-bottom: 1px solid rgba(198, 161, 91, 0.35);
     padding-right: 0;
     padding-bottom: 0.8rem;
   }
@@ -2079,5 +2095,140 @@ button {
     flex-direction: column;
     gap: 1rem;
     text-align: center;
+  }
+}
+
+/* ==========================================================================
+   SUPPLEMENTARY PAGE COMPONENTS (THEMED)
+   ========================================================================== */
+.hotel-features-banner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.banner-col {
+  background: var(--bg-card);
+  border: 1px solid var(--gold-border);
+  border-radius: var(--radius-md);
+  padding: 2.4rem;
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-smooth);
+}
+
+.banner-col:hover {
+  transform: translateY(-4px);
+  border-color: var(--gold-primary);
+  box-shadow: var(--shadow-gold-hover);
+}
+
+.banner-col h3 {
+  font-family: var(--font-serif-heading);
+  color: var(--text-primary);
+  font-size: 1.35rem;
+  margin-bottom: 0.6rem;
+}
+
+.banner-col p {
+  color: var(--text-secondary);
+  font-size: 0.94rem;
+  line-height: 1.7;
+}
+
+.phone-strip-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(135deg, #38251F 0%, #241712 100%);
+  border: 1px solid var(--gold-border);
+  border-radius: var(--radius-md);
+  padding: 2.2rem 2.8rem;
+  gap: 1.8rem;
+  flex-wrap: wrap;
+  box-shadow: var(--shadow-md);
+}
+
+.phone-strip-banner h3 {
+  font-family: var(--font-serif-heading);
+  color: var(--text-on-dark);
+  font-size: 1.55rem;
+  margin-bottom: 0.35rem;
+}
+
+.phone-strip-banner p {
+  color: rgba(250, 247, 242, 0.88);
+  font-size: 0.94rem;
+}
+
+.dining-feature-block {
+  background: var(--bg-card);
+  border: 1px solid var(--gold-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+}
+
+.dining-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.dining-media {
+  min-height: 340px;
+}
+
+.dining-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.dining-content {
+  padding: 3rem 2.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.dining-title {
+  font-family: var(--font-serif-heading);
+  font-size: 1.85rem;
+  color: var(--text-primary);
+  margin-bottom: 0.9rem;
+}
+
+.dining-p {
+  color: var(--text-secondary);
+  font-size: 0.96rem;
+  line-height: 1.75;
+  margin-bottom: 1.6rem;
+}
+
+.dining-meta-strip {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.dining-meta-pill {
+  background: rgba(198, 161, 91, 0.15);
+  border: 1px solid rgba(198, 161, 91, 0.35);
+  border-radius: var(--radius-full);
+  padding: 0.45rem 1rem;
+  font-size: 0.82rem;
+  color: var(--text-primary);
+}
+
+@media (max-width: 768px) {
+  .hotel-features-banner {
+    grid-template-columns: 1fr;
+  }
+  .dining-grid {
+    grid-template-columns: 1fr;
+  }
+  .phone-strip-banner {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.8rem;
   }
 }

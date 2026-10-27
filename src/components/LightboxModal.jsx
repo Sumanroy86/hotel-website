@@ -42,7 +42,7 @@ export default function LightboxModal({ isOpen, onClose, imageData }) {
 
         <div className="lightbox-caption-bar">
           <div>
-            <h4 style={{ fontFamily: 'var(--font-serif-heading)', color: '#fff', fontSize: '1.2rem', marginBottom: '0.2rem' }}>
+            <h4 style={{ fontFamily: 'var(--font-serif-heading)', color: 'var(--text-primary)', fontSize: '1.2rem', marginBottom: '0.2rem' }}>
               {imageData.title}
             </h4>
             <p style={{ color: 'var(--text-secondary)', fontSize: '0.85rem' }}>

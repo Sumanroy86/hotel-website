@@ -97,7 +97,7 @@ export default function Navbar() {
           <button
             onClick={() => setMobileMenuOpen(false)}
             aria-label="Close menu"
-            style={{ color: '#F5F0E8', padding: '0.4rem' }}
+            style={{ color: 'var(--text-on-dark)', padding: '0.4rem' }}
           >
             <X size={24} />
           </button>
